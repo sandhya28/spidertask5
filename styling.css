@@ -1,0 +1,197 @@
+body
+{
+		background-image: url('background.jpg');
+}
+
+#search,#searchmovie1,#searchmovie2,#searchlist
+{
+            
+    width: 30%;
+    height: 3vw;
+    font-size: 1.6vw;
+    font-family: "Comic Sans MS";
+    color: #333;
+    outline: 0;
+    background: white;
+    border: 3px solid blue;
+}
+
+#search:focus,#searchtype:focus,#searchlang:focus,#searchid:focus,#searchyear:focus,#searchtypelist:focus,#searchseason:focus,
+#searchepisode:focus,#searchmovie1:focus,#searchmovie2:focus,#searchlist:focus,#searchmovie1:focus,#searchtypelist:focus
+{		
+	border: 3px solid green;
+}
+
+#searchtype,#searchlang,#searchid,#searchyear,#searchtypelist,#searchseason,#searchepisode
+{
+    width: 10%;
+    height: 3vw;
+    font-size: 1.6vw;
+    font-family: "Comic Sans MS";
+    color: #333;
+    outline: 0;
+    background: white;
+    border: 3px solid blue;
+}
+
+#searchmovie1,#searchtypelist
+{
+    margin-left: 18%;   
+}
+
+    #searchtype
+{
+    margin-left: 10%;
+} 
+
+#searchuser,#searchmovie
+{	
+    display: inline-block;
+	background-color: blue;
+    color: white;
+    padding: 1.2vw 2vw 0.8vw 2vw;
+    text-align: center;
+    border: none;
+    border-radius:none;
+    font-style: "Comic Sans MS";
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+#searchuser:hover,#searchmovie:hover
+{
+    background-color: #0000cc;
+}
+
+ul 
+{
+    margin-top: 11%;
+    list-style-type:none;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+}
+
+li a:not(.active) 
+{
+    display: block;
+    color: #0000ff;
+    padding: 8px;
+    margin: 5px 0px;
+    border: 1px;
+    background-color: #6699ff;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Comic Sans MS"
+}
+
+li a.active 
+{
+    display: block;
+    color: white;
+    padding: 8px;
+    margin: 5px 0px;
+    border: 1px;
+    background-color: #004de6 ;
+    color: white;
+    border: 1px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    font-family: "Comic Sans MS"
+}
+
+li a:hover:not(.active) 
+{
+    background-color: #3377ff;
+    color: white;
+    border-radius: 10px;
+}
+
+#nice,#nice1,#nice2,#nice0
+{
+    margin-left: 28%;
+    border: 1vw;
+    font-size: 1.5vw;
+    font-family: "Comic Sans MS";
+    margin-right: 30%;
+}
+
+#nice1,#nice2,#nice0
+{
+    margin-right: 5%;
+}
+
+#image
+{
+    margin-top: 5%;
+    float: right;
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td 
+{
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even)
+{
+    background-color: #cce6ff;
+}
+
+th 
+{
+    background-color: #0080ff;
+    color: white;
+}
+
+#searchtab
+{
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 2vw;
+}
+
+p
+{
+    cursor: pointer;
+}
+
+#listing
+{
+    color: white;
+    font-size: 2vw;
+    text-align :center;
+}
+
+.homeimg
+{
+    margin: 7%;
+}
+
+.head
+{
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: "Comic Sans MS";
+    color: blue;
+}
+
+h1
+{
+    color: blue;
+    font-size: 4vw;
+    font-family: "Comic Sans MS";
+}

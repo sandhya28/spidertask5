@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Movie Search</title>
+			<link rel="stylesheet" type="text/css" href="styling.css">
+		</head>
+		
+		<body>
+			<ul>
+  				<li><a class="1" href="#home" class="active">Home</a></li>
+  				<li><a class="2" href="#moviesearch">Search for Details</a></li>
+  				<li><a class="3" href="#compare">Compare Movies,Series</a></li>
+  				<li><a class="4" href="#list">Search by keyword for movies and series</a></li>
+			</ul>
+
+			<div id="homepage">
+				<h1 align="center">All About Movies, Series and Episodes</h1>
+				<br><br>
+				<div id= "nice0">
+
+				</div><br><br>
+				
+				<p align="center" class="head">and more........</p>
+			</div>
+			<br>
+
+			<div id="moviesearch">
+		
+				<br><br>
+				<input type="text"  id = "searchtype" list ="typelist" placeholder=" Type" onkeyup="episodeverify()">
+				<input type="text"  id = "searchyear" placeholder=" Year">
+				<span id="episode">
+				<input type="text"  id = "searchseason" placeholder=" Season">
+				<input type="text"  id = "searchepisode" placeholder=" Episode"></span>
+				<input type="text" name="search" id = "search" placeholder=" IMDb ID or Name" onkeyup="myFunction()" list = "option">
+					
+				<button onclick="mysearch()" id="searchuser">Search</button><br><br><br>
+
+				<datalist id="typelist">
+					<option value = "Movie">
+					<option value = "Series">
+					<option value= "Episode">
+				</datalist>
+
+				<img id = "image">	
+		
+				<div id="nice">
+			
+				</div>
+			</div>
+			<div id="moviecompare">
+				<br><br>
+				<input type="text" name="search" id = "searchmovie1" placeholder=" Movie/series name or IMDb ID" onkeyup="movie_search_suggestion1()" list = "option">
+				<input type="text" name="search" id = "searchmovie2" placeholder=" Movie/series name or IMDb ID" onkeyup="movie_search_suggestion2()" list = "option">
+	
+				<button onclick="mysearchcompare()" id="searchmovie">Search</button><br><br><br>
+				<p align="center">
+					<img id = "image1">
+		
+					<img id = "image2">	
+				</p>
+				
+				<div id="nice1">
+		
+				</div>
+
+			</div>
+
+			<div id="movielisting">
+				<br><br>
+				<input type="text"  id = "searchtypelist" list ="typelist" placeholder=" Type">
+				<input type="text" name="search" id = "searchlist" placeholder=" Keyword">
+					
+				<button onclick="mysearchlisting()" id="searchuser">Search</button><br><br><br>
+				
+				<div id="nice2">
+				
+				</div>				
+			</div>
+
+
+
+			<datalist id="option">
+						
+			</datalist>
+			<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+			<script type="text/javascript" src="spider5.js">
+			</script>
+		</body>
+	</html>
